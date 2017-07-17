@@ -3,6 +3,25 @@
 	flex-direction: column;
 	align-items: center;
 	justify-contents: space-around;
+
+	.player {
+		font-size: 3em;
+	}
+
+	.player_info_text {
+		font-size: 1.33em;
+	}
+
+	.player_section_header {
+		text-align: center;
+		font-size: 2rem;
+	}
+
+	.player,
+	.player_info_text,
+	.player_section_header {
+		margin: 1.33rem 0;
+	}
 }
 
 .arrest_wrapper {

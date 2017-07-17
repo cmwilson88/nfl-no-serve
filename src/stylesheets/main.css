@@ -52,7 +52,7 @@ a {
   align-items: center;
   margin-bottom: 150px;
   background-image: url("../images/banner.jpg");
-  background-position: 100% 100%;
+  background-position: 100% 120%;
   background-attachment: fixed; }
 
 .shield {
@@ -151,6 +151,17 @@ a {
   flex-direction: column;
   align-items: center;
   justify-contents: space-around; }
+  .general_player_info .player {
+    font-size: 3em; }
+  .general_player_info .player_info_text {
+    font-size: 1.33em; }
+  .general_player_info .player_section_header {
+    text-align: center;
+    font-size: 2rem; }
+  .general_player_info .player,
+  .general_player_info .player_info_text,
+  .general_player_info .player_section_header {
+    margin: 1.33rem 0; }
 
 .arrest_wrapper {
   width: 75%;

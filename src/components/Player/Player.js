@@ -42,10 +42,10 @@ class Player extends Component {
 			return (
 				<div>
 					<div className="general_player_info">
-						<h1>{this.state.currentPlayer}</h1>
-						<p>{`Position: ${this.state.playerDetails[0].Position_name}`}</p>
-						<p>{`Latest Team When Arrested: ${this.state.playerDetails[0].Team_preffered_name}`}</p>
-						<h2>Arrest Record</h2>
+						<h1 className="player">{this.state.currentPlayer}</h1>
+						<p className="player_info_text">{`Position: ${this.state.playerDetails[0].Position_name}`}</p>
+						<p className="player_info_text">{`Team During Last Arrest: ${this.state.playerDetails[0].Team_preffered_name}`}</p>
+						<h2 className="player_section_header">Arrest Record</h2>
 						{arrests}
 					</div>
 				</div>
