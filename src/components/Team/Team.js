@@ -45,10 +45,11 @@ class Team extends Component {
       	}; 
 		return (
 			<div className="team_page">
-				<h1> {matchedTeam.name} </h1>
+				<h1 className="team_title"> {matchedTeam.name} </h1>
+				<div className="team_hr"></div>
 				<div style={bgImgStyles} className="team_display_image"></div>
-				<TeamTopCrime topCrimes={this.state.topCrimes} />
-				<TeamTopPlayers team={matchedTeam} topPlayers={this.state.topPlayers} />
+				<TeamTopCrime topCrimes={this.state.topCrimes} currentTeam={matchedTeam} />
+				<TeamTopPlayers team={matchedTeam} topPlayers={this.state.topPlayers} currentTeam={matchedTeam} />
 			</div>
 		)
 	}

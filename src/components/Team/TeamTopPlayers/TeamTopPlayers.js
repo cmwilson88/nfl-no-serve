@@ -2,11 +2,14 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 
 export default function TeamTopPlayers(props) {
-	console.log(props);
+	const btnTeamColor = {
+		backgroundColor: props.currentTeam.colorScheme[0],
+		color: props.currentTeam.team === 'TB' ? '#FFF' : props.currentTeam.colorScheme[1]
+	}
 	const topPlayers = props.topPlayers.map((player, i) => {
 		return (
 			<Link to={`./${props.team.team}/${player.Name}`} key={i}>
-				<div className="team_player_item" >
+				<div style={btnTeamColor} className="team_player_item" >
 					<div className="player_name">{player.Name}</div>
 					<div className="arrest_count">{player.arrest_count}</div>
 				</div>

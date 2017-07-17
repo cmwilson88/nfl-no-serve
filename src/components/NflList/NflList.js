@@ -18,7 +18,8 @@ function NflList(props) {
     })
     return(
       <div key={index}>
-        <h3>{division.division}</h3>
+        <h3 className="division_title">{division.division}</h3>
+        <div className="division_hr"></div>
         <div className='division_teams'>
           {teams}
         </div>

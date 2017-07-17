@@ -44,7 +44,7 @@ class Player extends Component {
 					<div className="general_player_info">
 						<h1>{this.state.currentPlayer}</h1>
 						<p>{`Position: ${this.state.playerDetails[0].Position_name}`}</p>
-						<p>{`Latest Team: ${this.state.playerDetails[0].Team_preffered_name}`}</p>
+						<p>{`Latest Team When Arrested: ${this.state.playerDetails[0].Team_preffered_name}`}</p>
 						<h2>Arrest Record</h2>
 						{arrests}
 					</div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import PieChart from '../../Charts/PieChart';
 
 function TeamTopCrime(props) {
 	console.log(props.topCrimes);
@@ -15,6 +16,9 @@ function TeamTopCrime(props) {
 			<h2 className="team_section_header">Top Crimes</h2>
 			<div className="crime_wrapper">
 				{topCrimes}
+			</div>
+			<div className="pieChart">
+				<PieChart data={props.topCrimes} currentTeam={props.currentTeam} />
 			</div>
 		</div>
 	) 
